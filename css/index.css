@@ -1,1 +1,354 @@
 
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #15362d 0%, #0b1c1f 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Introduction Section */
+.introduction-section {
+    padding: 5rem 0;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.stats-display {
+    background: linear-gradient(135deg, #15362d 0%, #45af7d 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.stats-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stat-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Global Overview Section */
+.global-overview-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.overview-text {
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.key-points-box {
+    background-color: #ffffff;
+    border-left: 5px solid #45af7d;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box-title {
+    color: #15362d;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.factors-list {
+    list-style: none;
+}
+
+.factors-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.factors-list li::before {
+    content: "→";
+    color: #45af7d;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Philippines Section */
+.philippines-section {
+    background: linear-gradient(135deg, #0b1c1f 0%, #15362d 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.philippines-title {
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.philippines-intro {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.philippines-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.phil-stat-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.big-stat {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.philippines-conclusion {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* External Resources Section */
+.external-resources-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.resource-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #45af7d;
+}
+
+.resource-title {
+    color: #15362d;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.resource-description {
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.resource-link {
+    color: #45af7d;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.resource-link:hover {
+    border-bottom-color: #45af7d;
+}
+
+/* Mobile Specific Styles for Index */
+@media screen and (max-width: 768px) {
+    /* Mobile Hero */
+    .hero-section {
+        padding: 4rem 0;
+        background: linear-gradient(45deg, #45af7d 0%, #15362d 50%, #0b1c1f 100%);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        background: linear-gradient(45deg, #ffffff, #45af7d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    
+    /* Mobile Introduction */
+    .intro-content,
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .stats-display {
+        background: linear-gradient(45deg, #45af7d 0%, #15362d 100%);
+        border-radius: 15px;
+        transform: rotate(-2deg);
+        box-shadow: 0 10px 30px rgba(69, 175, 125, 0.3);
+    }
+    
+    .stat-item {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        transform: rotate(1deg);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+        background: linear-gradient(45deg, #ffffff, #45af7d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    /* Mobile Philippines Section */
+    .philippines-section {
+        background: linear-gradient(45deg, #0b1c1f 0%, #15362d 50%, #45af7d 100%);
+    }
+    
+    .philippines-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .phil-stat-card {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        border: 2px solid rgba(69, 175, 125, 0.3);
+        transform: rotate(1deg);
+    }
+    
+    .phil-stat-card:nth-child(2n) {
+        transform: rotate(-1deg);
+    }
+    
+    .big-stat {
+        background: linear-gradient(45deg, #45af7d, #ffffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    /* Mobile Resources */
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .resource-link {
+        display: inline-block;
+        background-color: #45af7d;
+        color: #ffffff;
+        padding: 0.7rem 1.5rem;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        border-bottom: none;
+        transition: transform 0.3s ease;
+    }
+    
+    .resource-link:hover {
+        transform: translateY(-2px);
+        background-color: #359666;
+    }
+}

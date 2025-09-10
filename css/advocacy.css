@@ -1,0 +1,63 @@
+
+.advocacy-hero {
+    background: linear-gradient(135deg, rgba(21,54,45,0.95), rgba(69,175,125,0.85));
+    color: #ffffff;
+}
+
+.advocacy-hero .container {
+    padding: 5rem 20px;
+    text-align: center;
+}
+
+.advocacy-headline {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.advocacy-tagline {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.95;
+}
+
+.advocacy-section {
+    padding: 3rem 0;
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.education-card .card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #45af7d;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(69, 175, 125, 0.35);
+}
+
+.education-list {
+    margin: 0;
+}
+
+.education-list li {
+    margin-bottom: 0.75rem;
+}
+
+
+@media screen and (min-width: 769px) {
+    .advocacy-headline { font-size: 3.5rem; }
+    .education-card { grid-template-columns: 80px 1fr; }
+}
+
+

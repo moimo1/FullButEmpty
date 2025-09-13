@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("fonts/LibreBaskerville-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #0b1c1f;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Libre Baskerville", serif;
+  color: #15362d;
+  margin-bottom: 1rem;
+}
+
+h1.headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-left: 6px solid #45af7d;
+  padding-left: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(21, 54, 45, 0.9), rgba(11, 28, 31, 0.9));
+  color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero .headline {
+  color: #ffffff;
+}
+
+.hero .intro {
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section p, 
+.section li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #0b1c1f;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li strong {
+  color: #15362d;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1.headline {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+  .section {
+    padding: 2rem 1.5rem;
+  }
+}

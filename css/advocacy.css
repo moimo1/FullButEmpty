@@ -1,6 +1,10 @@
 
 .advocacy-hero {
-    background: linear-gradient(135deg, rgba(21,54,45,0.95), rgba(69,175,125,0.85));
+    background: linear-gradient(135deg, rgba(21,54,45,0.75), rgba(69,175,125,0.55)), url('../img/advocacy/hero-bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
 }
 
@@ -124,4 +128,18 @@
     font-size: 0.9rem;
 }
 
+/* Media placeholder */
+.media-frame {
+    background: #f8f9fa;
+    border: 2px dashed rgba(21,54,45,0.2);
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
 
+.media-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

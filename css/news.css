@@ -1,0 +1,217 @@
+/* ====== Base Reset & Typography ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f9f6; /* light greenish background */
+    color: #222;
+}
+
+/* ====== Header & Navigation ====== */
+.site-header {
+    background: linear-gradient(135deg, #15362d 0%, #0b1c1f 100%);
+    color: #fff;
+    border-bottom: 4px solid #45af7d;
+}
+
+.main-navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.site-logo {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-logo:hover {
+    color: #45af7d;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    border-bottom: 2px solid #45af7d;
+    color: #45af7d;
+}
+
+/* ====== Headline Section ====== */
+.headline-section {
+    background: linear-gradient(135deg, #15362d 0%, #45af7d 100%);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.headline-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.headline-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ====== Content Sections ====== */
+main section {
+    padding: 2.5rem;
+    border-bottom: 1px solid #cde5d8; /* soft green border */
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #15362d;
+    border-left: 5px solid #45af7d;
+    padding-left: 0.5rem;
+    font-weight: 700;
+}
+
+main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+main li {
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #f0f8f4; /* pale green card */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: background-color 0.3s ease;
+}
+
+main li:hover {
+    background-color: #e2f3e9; /* slightly deeper green on hover */
+}
+
+main li strong {
+    color: #15362d;
+}
+
+/* ====== Closing CTA ====== */
+.closing-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #15362d 0%, #0b1c1f 100%);
+    color: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.closing-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.closing-cta button {
+    background-color: #45af7d;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.closing-cta button:hover {
+    background-color: #359666;
+    transform: translateY(-2px);
+}
+
+/* ====== Footer ====== */
+.site-footer {
+    background-color: #0b1c1f;
+    color: #ccc;
+    padding: 1.5rem 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 0.5rem;
+}
+
+.footer-attribution {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .main-navigation .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Headline */
+    .headline-title {
+        font-size: 1.8rem;
+    }
+
+    .headline-section {
+        padding: 2rem 1rem;
+    }
+
+    /* Sections */
+    main section {
+        padding: 1.5rem 1rem;
+    }
+
+    main li {
+        padding: 0.75rem 1rem;
+    }
+
+    /* Closing CTA */
+    .closing-cta {
+        padding: 2rem 1rem;
+    }
+
+    .closing-cta p {
+        font-size: 1rem;
+    }
+}

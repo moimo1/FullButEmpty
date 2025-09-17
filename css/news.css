@@ -4,27 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* ====== Header & Navigation ====== */
-.site-header {
-    background: linear-gradient(135deg, #15362d 0%, #0b1c1f 100%);
-    color: #fff;
-    border-bottom: 4px solid #45af7d;
-}
-
-.site-logo {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.site-logo:hover {
-    color: #45af7d;
-}
-
 /* ====== Headline Section ====== */
 .headline-section {
     background: linear-gradient(135deg, #15362d 0%, #45af7d 100%);

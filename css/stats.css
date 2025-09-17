@@ -41,12 +41,6 @@
 }
 
 
-/* Container */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-}
 
 
 h1.headline {
@@ -98,31 +92,13 @@ h3 {
   background-color: #f9f9f9;
 }
 
-.section p, 
-.section li {
+.section p {
   font-size: 1rem;
   margin-bottom: 0.75rem;
   color: #0b1c1f;
 }
 
-/* Lists */
-ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-ul li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-ul li:last-child {
-  border-bottom: none;
-}
-
-ul li strong {
-  color: #15362d;
-}
 
 
 /* Responsive */

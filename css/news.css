@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f9f6; /* light greenish background */
-    color: #222;
-}
 
 /* ====== Header & Navigation ====== */
 .site-header {

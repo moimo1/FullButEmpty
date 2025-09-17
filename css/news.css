@@ -38,29 +38,6 @@ body {
     color: #45af7d;
 }
 
-
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.25rem 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    border-bottom: 2px solid #45af7d;
-    color: #45af7d;
-}
-
 /* ====== Headline Section ====== */
 .headline-section {
     background: linear-gradient(135deg, #15362d 0%, #45af7d 100%);

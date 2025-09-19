@@ -160,7 +160,9 @@ main li strong {
 }
 /* Page Hero Section (for new breaking news) */
 .page-hero {
-    background: linear-gradient(135deg, #15362d 0%, #45af7d 50%, #0b1c1f 100%);
+   background: linear-gradient(135deg, rgba(21, 54, 45, 0.8) 0%, rgba(69, 175, 125, 0.8) 50%, rgba(11, 28, 31, 0.8) 100%),
+                url('images/nutrition-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
     color: #ffffff;
     text-align: center;
     padding: 4rem 0;
@@ -330,15 +332,14 @@ main li strong {
     font-style: italic;
 }
 
-.expert-quote {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333333;
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #45af7d;
-    padding-left: 1.5rem;
-    position: relative;
+.expert-quote::before {
+    content: "\201C";  /* Unicode for opening double quote */
+    font-size: 4rem;
+    color: rgba(69, 175, 125, 0.3);
+    position: absolute;
+    left: -0.5rem;
+    top: -1rem;
+    font-family: serif;
 }
 
 .expert-quote::before {
@@ -558,4 +559,297 @@ main li strong {
     100% {
         box-shadow: 0 0 0 0 rgba(69, 175, 125, 0);
     }
+}
+/* ====== IMAGE STYLES FOR NEWS PAGE ====== */
+
+/* News Item Images */
+.news-image {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.news-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Program Images (for your existing list items) */
+.program-image {
+    float: right;
+    width: 200px;
+    height: 120px;
+    margin: 0 0 1rem 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.program-image:hover img {
+    transform: scale(1.1);
+}
+
+/* Expert Avatar Images */
+.expert-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #45af7d;
+}
+
+/* Featured Story Images */
+.story-image {
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Image Gallery for Multiple Photos */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 1rem;
+    background: #f8f9fa;
+    font-size: 0.9rem;
+    color: #666666;
+    text-align: center;
+}
+
+/* Infographic Styles */
+.infographic {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.infographic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.infographic-title {
+    font-size: 1.3rem;
+    color: #15362d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.infographic-caption {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Hero Background with Overlay */
+.hero-with-image {
+    background: linear-gradient(135deg, rgba(21, 54, 45, 0.8) 0%, rgba(69, 175, 125, 0.8) 100%),
+                url('images/nutrition-hero.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+/* Image Cards for Programs */
+.program-card-with-image {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #45af7d;
+}
+
+.program-card-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-card-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.program-card-content h3 {
+    color: #15362d;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.program-card-content p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Mobile Image Styles */
+@media screen and (max-width: 768px) {
+    /* Mobile News Images */
+    .news-image img {
+        height: 150px;
+    }
+    
+    /* Mobile Program Images */
+    .program-image {
+        float: none;
+        width: 100%;
+        height: 150px;
+        margin: 0 0 1rem 0;
+    }
+    
+    .program-card-with-image {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .program-card-image {
+        order: -1;
+    }
+    
+    .program-card-image img {
+        height: 150px;
+    }
+    
+    /* Mobile Gallery */
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-item img {
+        height: 180px;
+    }
+    
+    /* Mobile Infographic */
+    .infographic {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    /* Mobile Story Images */
+    .story-image img {
+        height: 200px;
+    }
+    
+    /* Mobile Hero Background */
+    .hero-with-image {
+        background-attachment: scroll;
+    }
+    
+    /* Mobile Expert Avatars */
+    .expert-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .expert-avatar img {
+        border-width: 2px;
+    }
+}
+
+/* Lazy Loading Animation */
+.image-loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Image Caption Styles */
+.image-caption {
+    font-size: 0.85rem;
+    color: #666666;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Featured Image Overlay */
+.featured-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.featured-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(69, 175, 125, 0.1) 0%, rgba(21, 54, 45, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.featured-image:hover::after {
+    opacity: 1;
 }

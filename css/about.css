@@ -384,6 +384,7 @@
         background: linear-gradient(45deg, #ffffff, #15362d);
         background-clip: text;
         -webkit-background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     }
     

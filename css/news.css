@@ -343,7 +343,7 @@ main li strong {
 }
 
 .expert-quote::before {
-    content: """;
+    content: "\201C";
     font-size: 4rem;
     color: rgba(69, 175, 125, 0.3);
     position: absolute;

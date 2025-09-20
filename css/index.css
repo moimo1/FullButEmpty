@@ -1,4 +1,3 @@
-
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, #15362d 0%, #0b1c1f 100%);
@@ -258,9 +257,11 @@
     
     .hero-title {
         font-size: 2.5rem;
+        /* FIXED: Added standard property before webkit prefix */
         background: linear-gradient(45deg, #ffffff, #45af7d);
         background-clip: text;
         -webkit-background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
         text-shadow: none;
     }
@@ -292,9 +293,11 @@
     
     .stat-number {
         font-size: 2rem;
+        /* FIXED: Added standard property before webkit prefix */
         background: linear-gradient(45deg, #ffffff, #45af7d);
         background-clip: text;
         -webkit-background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     }
     
@@ -320,9 +323,11 @@
     }
     
     .big-stat {
+        /* FIXED: Added standard property before webkit prefix */
         background: linear-gradient(45deg, #45af7d, #ffffff);
         background-clip: text;
         -webkit-background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
     }
     
